@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/menuNew"
+		android:icon="@drawable/newest"
+		android:title="New data"/>
+	<item android:id="@+id/menuCal"
+		android:icon="@drawable/calc"
+		android:title="Calculator"/>
+    <item android:id="@+id/menuResult"
+		android:icon="@drawable/result"
+		android:title="Results"/>
+	<item android:id="@+id/menuEditor"
+		android:icon="@drawable/edit"
+		android:title="Result Editor"/>
+</menu>

@@ -1,0 +1,37 @@
+@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		// TODO: Implement this method
+       MenuInflater m=getMenuInflater();
+	   m.inflate(R.layout.menu,menu);
+	   return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		// TODO: Implement this method
+		switch(item.getItemId()){
+			case R.id.menuNew:
+				ymod = 0;
+				yn.setTitle("Test name");
+				yedit.setText("");
+				yedit.setInputType(InputType.TYPE_CLASS_TEXT);
+				yn.show();
+				return true;
+			case R.id.menuEditor:
+				Intent ina=new Intent(this,editor.class);
+				startActivity(ina);
+				finish();
+				return true;
+			case R.id.menuCal:
+				calcu.show();
+				return true;
+			case R.id.menuResult:
+				radp=new radapter(con,rdir.listFiles());
+				rlis.setAdapter(radp);
+				resu.show();
+				return true;
+		}
+		return true;
+	}
